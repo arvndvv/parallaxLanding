@@ -1,4 +1,4 @@
-window.onload(() => {
+window.onload = () => {
   let moon = document.querySelector("#moon");
   let river = document.querySelector("#river");
   let grass = document.querySelector("#grass");
@@ -6,13 +6,13 @@ window.onload(() => {
   let text = document.querySelector("#text");
 
   // text.style.right = -100 + "px";
-  console.log(text.style.right);
+  //   console.log(text.style.right);
 
   window.addEventListener("scroll", () => {
     wH = window.innerHeight;
     wW = window.innerWidth;
     let value = window.scrollY;
-    console.log(value);
+    // console.log(value);
 
     moon.style.top = value * 2.2 - 20 + "px";
     text.style.right = value + "px";
@@ -25,4 +25,4 @@ window.onload(() => {
     }
     //   river.style.right = value - 100 + "px";
   });
-});
+};
